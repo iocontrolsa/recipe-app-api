@@ -26,11 +26,6 @@ RUN python -m venv /py && \
         --no-create-home \
         django-user
 
-#RUN python -m venv /py
-#RUN /py/bin/pip install --upgrade pip
-#RUN /py/bin/pip install -r /tmp/requirements.txt
-#RUN rm -rf /tmp
-#RUN adduser --disabled-password --no-create-home django-user
 
 ENV PATH="/py/bin:$PATH"
 
