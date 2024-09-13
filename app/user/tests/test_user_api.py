@@ -64,13 +64,13 @@ class PublicUserApiTest(TestCase):
     def test_create_token_for_user(self):
         """ Test generates token for valid credentials. """
         user_details = {
-            'name': 'Test Name',
-            'email': 'test@example.com',
+            'name': 'Test Name 22',
+            'email': 'test22@example.com',
             'password': 'test-user-password123'
-        } 
+        }
         create_user(**user_details)
         payload = {
-            'email': user_details['name'],
+            'email': user_details['email'],
             'password': user_details['password']
         }
         res = self.client.post(TOKEN_URL, payload)
