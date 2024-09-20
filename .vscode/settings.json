@@ -3,6 +3,7 @@
         "authtoken",
         "psycopg",
         "testpass",
-        "unitest"
+        "unitest",
+        "viewsets"
     ]
 }
